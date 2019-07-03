@@ -1,29 +1,28 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Verdana, sans-serif; 
-    margin:0
+  font-family: Verdana, sans-serif;
+  margin: 0
 }
 
 .mySlides {
-    display: none
+  display: none
 }
 
 img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-/* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -38,15 +37,14 @@ img {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .numbertext {
@@ -68,7 +66,8 @@ img {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -80,19 +79,34 @@ img {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: 10} 
-  to {opacity: .9}
+  from {
+    opacity: 10
+  }
+
+  to {
+    opacity: .9
+  }
 }
 
 @keyframes fade {
-  from {opacity: 10} 
-  to {opacity: .9}
+  from {
+    opacity: 10
+  }
+
+  to {
+    opacity: .9
+  }
 }
 
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
 }
 
-.background-comics{
-    background-color: black
+.background-comics {
+  background-color: black
 }
