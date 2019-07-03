@@ -24,3 +24,11 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+var intervalo = window.setInterval(function() {
+  alert("Thank you for access");
+}, 100);
+
+window.setTimeout(function() {
+  clearInterval(intervalo);
+}, 100);

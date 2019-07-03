@@ -1,8 +1,9 @@
 
-window.onload = function(){
+window.addEventListener("load", function(event) {
 (function(){
     let Person = function(name, lastName, phone, email, notifications, message){
-    	this.name = name;
+      this.name = name;
+      this.lastName = lastName;
     	this.phone = phone;
     	this.email = email;
     	this.notifications = notifications;
@@ -11,6 +12,7 @@ window.onload = function(){
 
     let personArray = [];
 
+   addPerson = () => {
     document.getElementById('form-contact').onsubmit = function(e){
     	e.preventDefault();
     	let name = $('#name').val();
@@ -23,45 +25,66 @@ window.onload = function(){
                 alert('Em breve você receberá mais notificações sobre o projeto!');
             }
         }
-    
+      
     	let message = $('#message').val();
     	let person = new Person(name, lastName, phone, email, notifications, message);
 
         personArray.push(person);
+        var array = personArray.slice();
 
-        confirm('Are you sure you want to submit the form?');
-        if(confirm)
-        nickname = prompt("How would you like to be called?")
-        alert('Thank you for registering: ' + nickname);
+        confirm('Are you sure you want to submit the form, ' + array[0].name + '?');
+        if(confirm){
+          nickname = prompt("How would you like to be called?")
+          alert('Thank you for registering: ' + nickname);
+        }
     }
+  }
+
+  addPerson();
+
+    slideDownToform =  function(){
 
     $("#form-contact").hide();
 
     $("#feedback").click(function(){
         $("#form-contact").slideToggle("slow");
-      });
-
+        $( "#name" ).focus();
+        $( "#inputName" ).blur();
+      })
+      
       $("#showJoinTeam").hide();
       
-        $("#joinTeam").click(function(){
+     $("#joinTeam").click(function(){
         $("#showJoinTeam").slideToggle("slow");
-      });
+        $( "#inputName" ).focus();
+        $( "#name" ).blur();
+    });
+    }
 
-      document.getElementById('save').onclick = function(e){
-        e.preventDefault();
-        var arrayUser=[]
+    slideDownToform();
+
+    userFormId = document.getElementById('save');
+    userFormId.addEventListener("click", function(){
+      var arrayUser=[]
         if(JSON.parse(localStorage.getItem("user")) != null){
           arrayUser.push(JSON.parse(localStorage.getItem("user")));
         }
-        var name = document.getElementById("inputNome").value;
+        var name = document.getElementById("inputName").value;
       
         var user = {name: name};
-        console.log(user);
         arrayUser.push(user);
         var userJson = JSON.stringify(arrayUser);
         localStorage.setItem("Users", userJson);
-      
-      alert("Success, thank you for the send your interest to join us, " + user.name);
-    }
+
+        var numberOfNames = arrayUser.length;
+
+        getUser = function(userName){
+          return alert(`thank you for the send your interest to join us, ${userName}`);
+        }
+        getUser(user.name);
+
+        alert(`We have ${numberOfNames} interest to join us, is funny`);
+    }); 
+
   })();
-}
+});

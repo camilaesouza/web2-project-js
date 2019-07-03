@@ -57,7 +57,8 @@
       <form id="form-contact" class="col-md-8 offset-md-4 mt-5">
           <div class="form-group">
               <label for="formGroupExampleInput2">Name:</label>
-              <input type="text" class="form-control col-md-6 shadow-form" id="name" placeholder="Maria" required>
+              <input 
+              type="text" class="form-control col-md-6 shadow-form" id="name" placeholder="Maria" required>
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput2">Last name:</label>
@@ -65,11 +66,13 @@
               </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Phone</label>
-            <input type="text" class="form-control col-md-6 shadow-form" id="phone" placeholder="(44)99999-9999" required>
+            <input type="text" class="form-control col-md-6 shadow-form" id="phone" placeholder="(44)99999-9999" required
+            onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
           </div>
           <div class="form-group">
               <label for="formGroupExampleInput2">Email:</label>
-              <input type="text" class="form-control col-md-6 shadow-form" id="email" placeholder="example@example.com" required>
+              <input pattern="^\S+@(([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6})$"
+              type="text" class="form-control col-md-6 shadow-form" id="email" placeholder="example@example.com" required>
             </div>
             <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input " name="notifications">
@@ -85,7 +88,7 @@
         </form>
         <div class="col-md-8 offset-md-4 mt-5" id="joinTeam">Click here to join the team</div>
         <div id="showJoinTeam" class="col-md-8 offset-md-4 mt-5">
-            <input id="inputNome" type="text" class="form-control col-md-6" placeholder="Username" aria-label="Username">
+            <input id="inputName" type="text" class="form-control col-md-6" placeholder="Username" aria-label="Username">
             <div align="center" class="mt-5">
             <button id="save" type="button" class="btn btn-info mb-5">Info</button>
           </div>
