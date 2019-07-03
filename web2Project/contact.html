@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+      <link rel="stylesheet" href="assets/resources/style/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">  
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>  <script src="assets/libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/resources/scripts/forms.js"></script>
+  <header>
+      <div class="text-center " style="background-color: black; width: 100%">
+         <a href="index.html"> <img class="img-fluid" src="assets/resources/img/header.png" alt="tf2" style="width: 15%;"></a>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse font-header" id="navbarNav">
+                <ul class="navbar-nav navbar-center mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a> 
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="history.html">History</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="class.html">Classes</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="comics.html">Comics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contato</a>
+                      </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+  </div>
+  </header>
+  <body class="body-color">
+    <div class="card bg-card text-white ml-2 mr-2 mt-5">
+      <div class="card-body">
+        <div class="text-center">
+          <h2 class="title-font">
+            <i class="material-icons">star</i> 
+            contact us 
+            <i class="material-icons">star</i></h2>
+        <p class="font-text">Would you like us to send you a message? fill the form.</p>
+      </div>
+      <div class="col-md-8 offset-md-4 mt-5" id="feedback">Click here for send your feedback</div>
+      <form id="form-contact" class="col-md-8 offset-md-4 mt-5">
+          <div class="form-group">
+              <label for="formGroupExampleInput2">Name:</label>
+              <input type="text" class="form-control col-md-6 shadow-form" id="name" placeholder="Maria" required>
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Last name:</label>
+                <input type="text" class="form-control col-md-6 shadow-form" id="last-name" placeholder="Argent" required>
+              </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Phone</label>
+            <input type="text" class="form-control col-md-6 shadow-form" id="phone" placeholder="(44)99999-9999" required>
+          </div>
+          <div class="form-group">
+              <label for="formGroupExampleInput2">Email:</label>
+              <input type="text" class="form-control col-md-6 shadow-form" id="email" placeholder="example@example.com" required>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input " name="notifications">
+                <label class="form-check-label" for="exampleCheck1">Receber Notficação?</label>
+              </div>
+          <div class="form-group col-md-6">
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea class="form-control shadow-form" id="message" rows="3" required></textarea>
+            </div>
+            <div align="center" class="mt-5">
+                <button type="submit" class="btn btn-info mb-5">Submit</button>
+                </div>
+        </form>
+        <div class="col-md-8 offset-md-4 mt-5" id="joinTeam">Click here to join the team</div>
+        <div id="showJoinTeam" class="col-md-8 offset-md-4 mt-5">
+            <input id="inputNome" type="text" class="form-control col-md-6" placeholder="Username" aria-label="Username">
+            <div align="center" class="mt-5">
+            <button id="save" type="button" class="btn btn-info mb-5">Info</button>
+          </div>
+      </div>
+      </div>
+    </div>
+  </body>
+  <footer class="text-center mt-5 footer-color">
+      <div class="container">
+        <div class="row row-30">
+          <div class="col-md-4  mt-4">
+              <img src="assets/resources/img/footer.png" alt="">
+          </div>
+          <div class="col-md-4 mt-4">
+              <h2 class="text-white">Follow our social media:</h2>
+              <a href="https://www.facebook.com/TeamFortress2" class="fa fa-facebook text-left"></a>
+              <a href="https://twitter.com/TeamFortress" class="fa fa-twitter text-left"></a> 
+          </div>
+          <div class="col-md-4 col-xl-3 mt-4">
+            <h5 class="text-white">More info:</h5>
+            <ul class="nav-list">
+              <li>
+                <a class="text-warning" href="https://steamcommunity.com/workshop/browse?appid=440">
+                  Workshop</a>
+                </li>
+              <li><a class="text-warning" href="https://wiki.teamfortress.com/wiki/Main_Page">
+                Wiki</a>
+              </li>
+              <li><a class="text-warning" href="https://steamcommunity.com/app/440">
+                Community</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="text-right bg-dark text-white">
+      <span class="mr-2">@Stardust 4.2</span>
+    </div>
+    </html>
