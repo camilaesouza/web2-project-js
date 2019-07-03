@@ -5,10 +5,6 @@ window.addEventListener("load", function (event) {
 
      });
 
-     function muda(){
-      document.getElementById('text-class').style.color="#ffff00";
-    }
-
     let Person = function (name, lastName, phone, email, notifications, message) {
       this.name = name;
       this.lastName = lastName;
@@ -73,20 +69,20 @@ window.addEventListener("load", function (event) {
 
     userFormId = document.getElementById('save');
     userFormId.addEventListener("click", function () {
-      var arrayUser = []
+      let arrayUser = []
       if (JSON.parse(localStorage.getItem("user")) != null) {
         arrayUser.push(JSON.parse(localStorage.getItem("user")));
       }
-      var name = document.getElementById("inputName").value;
+      let name = document.getElementById("inputName").value;
 
-      var user = {
+      let user = {
         name: name
       };
       arrayUser.push(user);
-      var userJson = JSON.stringify(arrayUser);
+      let userJson = JSON.stringify(arrayUser);
       localStorage.setItem("Users", userJson);
 
-      var numberOfNames = arrayUser.length;
+      let numberOfNames = arrayUser.length;
 
       getUser = function (userName) {
         return alert(`thank you for the send your interest to join us, ${userName}`);
