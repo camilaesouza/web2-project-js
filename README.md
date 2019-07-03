@@ -4,6 +4,9 @@
 Wireframes do sistema Draw.io:
 https://drive.google.com/file/d/1HZwZdqwRxf5HQ5dDkHCXpoE64gPcyx-c/view?usp=sharing
 
+Git home Page:
+https://cahmomila.github.io/web2-project-js/web2Project/index.html
+
 Qualidade do código
 
 - [ ] Usar um Style Guide - apresentar o uso de pelo menos 10 regras do style escolhido (sugerido AirBnb)
@@ -30,7 +33,6 @@ Funções
 - [x] Função anônima com argumento
 - [x] Função anônima sem argumento
 - [x] Função anônima com retorno
-- [ ] Função anônima com retorno
 - [x] Função auto-executável
 - [x] Função com nome
 - [x] Função aninhada/local - declarar uma função dentro de outra
@@ -40,7 +42,7 @@ Funções
 Eventos
 
 - [x] Evento de carregamento do documento - onload
-- [ ] Evento de movimento do mouse
+- [x] Evento de movimento do mouse
 - [x] Evento de teclado - usar charCode ou keyCode
 - [x] Eventos de formulário - onfocus e onblur
 - [ ] Imprimir alguma propriedade do objeto event recebido como parâmetro
@@ -84,16 +86,6 @@ Objetos
 - [x] Criar objeto usando função construtora ou notação literal
 - [ ] Usar herança prototipal
 
-Canvas
-
-- [ ] Desenho de caminho ou arco
-- [ ] Desenho de texto ou imagem
-
-Animação
-
-- [ ] Por meio da manipulação do vetor images
-- [ ] Por meio da manipulação do canvas
-
 jQuery
 
 - [x] Uso de seletores CSS - id, classe e tag
@@ -103,12 +95,7 @@ jQuery
 - [x] Especificar o tratador de algum evento via jQuery
 - [ ] Manipulação do CSS via função css() e addClass()/removeClass()
 - [x] Manipulação do conteúdo de um input e div usando jQuery
-
-Manipular componentes do HTML5 API
-
-- [ ] map
-- [ ] online ou visibilidade
-- [ ] audio ou video
+- [x] Aplicar um plugin do jQuery (por exemplo, jQuery Mask Plugin)
 
 Web Storage
 
