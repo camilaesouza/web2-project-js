@@ -1,9 +1,6 @@
 window.addEventListener("load", function (event) {
   (function () {
-    $(document).ready(function () { 
       $('.phone_with_ddd').mask('(00) 0000-0000');
-
-     });
 
     let Person = function (name, lastName, phone, email, notifications, message) {
       this.name = name;
