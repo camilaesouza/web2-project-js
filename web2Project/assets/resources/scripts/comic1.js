@@ -31,8 +31,8 @@ function showSlides(n) {
 
 var intervalo = window.setInterval(function () {
   alert("Thank you for access");
-}, 100);
+}, 3000);
 
 window.setTimeout(function () {
   clearInterval(intervalo);
-}, 100);
+}, 5000);
